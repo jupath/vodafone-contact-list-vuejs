@@ -19,4 +19,4 @@ npm run build
 
 OR
 
-[CHECK OUT THE SAME APP BUILT WITH REACT + REDUX HERE](https://vodafone-homework-vuejs.firebaseapp.com/)
+[CHECK OUT THE SAME APP BUILT WITH REACT + REDUX](https://github.com/jupath/vodafone-contact-list-application)
