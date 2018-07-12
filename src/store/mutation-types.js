@@ -1,0 +1,6 @@
+export const SET_INITIAL_CONTACTS = 'SET_INITIAL_CONTACTS';
+export const ADD_CONTACT = 'ADD_CONTACTS';
+export const EDIT_CONTACT = 'EDIT_CONTACT';
+export const DELETE_CONTACT = 'DELETE_CONTACT';
+export const SET_FILTER = 'SET_FILTER';
+export const IS_LOADING = 'IS_LOADING';

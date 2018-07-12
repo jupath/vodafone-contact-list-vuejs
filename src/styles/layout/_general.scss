@@ -1,0 +1,61 @@
+// We need this to make sure footer is always at the bottom.
+#app,
+.site,
+body,
+html {
+  height: 100%;
+}
+
+.site {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+// General styles
+h1 {
+  font-size: $h1-font-size;
+  font-weight: 600;
+  margin-bottom: 45px;
+  text-align: center;
+  &:after {
+    background: $red;
+    bottom: -10px;
+    content: "";
+    display: block;
+    height: 3px;
+    margin: 0 auto;
+    position: relative;
+    width: 50px;
+  }
+}
+
+a {
+  color: $red;
+  transition: all .4;
+  &:hover {
+    color: darken($red,5%);
+    text-decoration: none;
+  }
+}
+
+small {
+  display: block;
+}
+
+label,
+.label-color {
+  color: $gray;
+  padding-right: 30px;
+}
+
+.error {
+  color: $red;
+}
+
+.page {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
