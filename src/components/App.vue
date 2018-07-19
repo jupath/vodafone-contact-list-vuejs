@@ -2,11 +2,9 @@
   <div id="app" class="container">
     <div class="site">
       <app-header />
-      <div class="transition">
-        <transition name="fade">
-          <router-view></router-view>
-        </transition>
-      </div>
+      <transition name="fade" mode="out-in">
+        <router-view></router-view>
+      </transition>
       <app-footer />
     </div>
   </div>
@@ -28,19 +26,11 @@ export default {
 .fade-enter-active {
   animation: coming 1s;
   animation-delay: .5s;
-  left: 0;
   opacity: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
 }
 
 .fade-leave-active {
   animation: going 1s;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
 }
 
 @keyframes going {
@@ -62,9 +52,5 @@ export default {
     transform: translateX(0);
     opacity: 1;
   }
-}
-
-.transition {
-  position: relative;
 }
 </style>
