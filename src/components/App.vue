@@ -25,7 +25,6 @@ export default {
 <style>
 .fade-enter-active {
   animation: coming 1s;
-  animation-delay: .5s;
   opacity: 0;
 }
 
